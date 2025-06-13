@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Classifier</title>
+</head>
+<body>
+    <h2>Upload Audio File for Classification</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="audiofile" accept=".wav,.mp3,.flac" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+        <p>Confidence: {{ confidence | round(2) }}%</p>
+    {% endif %}
+</body>
+</html>
