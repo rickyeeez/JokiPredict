@@ -5,3 +5,4 @@ scipy==1.13.1
 numpy==2.0.2
 scikit-learn==1.6.1
 soundfile==0.13.1
+gunicorn
